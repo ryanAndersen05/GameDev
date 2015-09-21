@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 5d87343b613d394478ce1dab1d9c0bef
+timeCreated: 1442778555
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: 3415212 12/12 - 01
+    100002: 3415212 12/12 - 02
+    100004: 3415212 12/12 - 03
+    100006: 3415212 12/12 - 04
+    100008: Circle01
+    100010: Circle02
+    100012: Circle03
+    100014: Circle04
+    100016: Circle05
+    100018: Circle06
+    100020: Circle07
+    100022: Circle08
+    100024: Circle09
+    100026: Circle10
+    100028: Circle11
+    100030: Circle12
+    100032: Circle13
+    100034: Circle14
+    100036: Circle15
+    100038: Circle16
+    100040: Circle17
+    100042: Circle18
+    100044: Circle19
+    100046: Circle20
+    100048: Group001
+    100050: K12 - 01
+    100052: K12 - 02
+    100054: K12 - 03
+    100056: K12 - 04
+    100058: K12 - 05
+    100060: K12 - 06
+    100062: K12 - 07
+    100064: K12 - 08
+    100066: K12 - 09
+    100068: K12 - 10
+    100070: Line01
+    100072: Line02
+    100074: Line03
+    100076: Line10
+    100078: Line12
+    100080: Line13
+    100082: Line14
+    100084: Line15
+    100086: Line16
+    100088: Line17
+    100090: Line18
+    100092: Line19
+    100094: Line20
+    100096: Line21
+    100098: Line22
+    100100: Line23
+    100102: Line24
+    100104: Line25
+    100106: //RootNode
+    100108: VRayPlane01
+    400000: 3415212 12/12 - 01
+    400002: 3415212 12/12 - 02
+    400004: 3415212 12/12 - 03
+    400006: 3415212 12/12 - 04
+    400008: Circle01
+    400010: Circle02
+    400012: Circle03
+    400014: Circle04
+    400016: Circle05
+    400018: Circle06
+    400020: Circle07
+    400022: Circle08
+    400024: Circle09
+    400026: Circle10
+    400028: Circle11
+    400030: Circle12
+    400032: Circle13
+    400034: Circle14
+    400036: Circle15
+    400038: Circle16
+    400040: Circle17
+    400042: Circle18
+    400044: Circle19
+    400046: Circle20
+    400048: Group001
+    400050: K12 - 01
+    400052: K12 - 02
+    400054: K12 - 03
+    400056: K12 - 04
+    400058: K12 - 05
+    400060: K12 - 06
+    400062: K12 - 07
+    400064: K12 - 08
+    400066: K12 - 09
+    400068: K12 - 10
+    400070: Line01
+    400072: Line02
+    400074: Line03
+    400076: Line10
+    400078: Line12
+    400080: Line13
+    400082: Line14
+    400084: Line15
+    400086: Line16
+    400088: Line17
+    400090: Line18
+    400092: Line19
+    400094: Line20
+    400096: Line21
+    400098: Line22
+    400100: Line23
+    400102: Line24
+    400104: Line25
+    400106: //RootNode
+    400108: VRayPlane01
+    2300000: 3415212 12/12 - 01
+    2300002: 3415212 12/12 - 02
+    2300004: 3415212 12/12 - 03
+    2300006: 3415212 12/12 - 04
+    2300008: Circle01
+    2300010: Circle02
+    2300012: Circle03
+    2300014: Circle04
+    2300016: Circle05
+    2300018: Circle06
+    2300020: Circle07
+    2300022: Circle08
+    2300024: Circle09
+    2300026: Circle10
+    2300028: Circle11
+    2300030: Circle12
+    2300032: Circle13
+    2300034: Circle14
+    2300036: Circle15
+    2300038: Circle16
+    2300040: Circle17
+    2300042: Circle18
+    2300044: Circle19
+    2300046: Circle20
+    2300048: K12 - 01
+    2300050: K12 - 02
+    2300052: K12 - 03
+    2300054: K12 - 04
+    2300056: K12 - 05
+    2300058: K12 - 06
+    2300060: K12 - 07
+    2300062: K12 - 08
+    2300064: K12 - 09
+    2300066: K12 - 10
+    2300068: Line01
+    2300070: Line02
+    2300072: Line03
+    2300074: Line10
+    2300076: Line12
+    2300078: Line13
+    2300080: Line14
+    2300082: Line15
+    2300084: Line16
+    2300086: Line17
+    2300088: Line18
+    2300090: Line19
+    2300092: Line20
+    2300094: Line21
+    2300096: Line22
+    2300098: Line23
+    2300100: Line24
+    2300102: Line25
+    3300000: 3415212 12/12 - 01
+    3300002: 3415212 12/12 - 02
+    3300004: 3415212 12/12 - 03
+    3300006: 3415212 12/12 - 04
+    3300008: Circle01
+    3300010: Circle02
+    3300012: Circle03
+    3300014: Circle04
+    3300016: Circle05
+    3300018: Circle06
+    3300020: Circle07
+    3300022: Circle08
+    3300024: Circle09
+    3300026: Circle10
+    3300028: Circle11
+    3300030: Circle12
+    3300032: Circle13
+    3300034: Circle14
+    3300036: Circle15
+    3300038: Circle16
+    3300040: Circle17
+    3300042: Circle18
+    3300044: Circle19
+    3300046: Circle20
+    3300048: K12 - 01
+    3300050: K12 - 02
+    3300052: K12 - 03
+    3300054: K12 - 04
+    3300056: K12 - 05
+    3300058: K12 - 06
+    3300060: K12 - 07
+    3300062: K12 - 08
+    3300064: K12 - 09
+    3300066: K12 - 10
+    3300068: Line01
+    3300070: Line02
+    3300072: Line03
+    3300074: Line10
+    3300076: Line12
+    3300078: Line13
+    3300080: Line14
+    3300082: Line15
+    3300084: Line16
+    3300086: Line17
+    3300088: Line18
+    3300090: Line19
+    3300092: Line20
+    3300094: Line21
+    3300096: Line22
+    3300098: Line23
+    3300100: Line24
+    3300102: Line25
+    4300000: Line01
+    4300002: Line02
+    4300004: Line10
+    4300006: Line12
+    4300008: Line03
+    4300010: Line13
+    4300012: Line14
+    4300014: Line15
+    4300016: Circle01
+    4300018: Circle02
+    4300020: Circle03
+    4300022: Circle04
+    4300024: Circle05
+    4300026: Circle06
+    4300028: Circle07
+    4300030: Circle08
+    4300032: Circle09
+    4300034: Circle10
+    4300036: Circle11
+    4300038: Circle12
+    4300040: Circle13
+    4300042: Circle14
+    4300044: Circle15
+    4300046: Circle16
+    4300048: Circle17
+    4300050: Circle18
+    4300052: Circle19
+    4300054: Circle20
+    4300056: K12 - 01
+    4300058: K12 - 02
+    4300060: K12 - 03
+    4300062: K12 - 04
+    4300064: K12 - 05
+    4300066: K12 - 06
+    4300068: K12 - 07
+    4300070: K12 - 08
+    4300072: K12 - 09
+    4300074: K12 - 10
+    4300076: Line16
+    4300078: Line17
+    4300080: Line18
+    4300082: Line19
+    4300084: Line20
+    4300086: Line21
+    4300088: Line22
+    4300090: Line23
+    4300092: Line24
+    4300094: Line25
+    4300096: 3415212 12/12 - 01
+    4300098: 3415212 12/12 - 02
+    4300100: 3415212 12/12 - 03
+    4300102: 3415212 12/12 - 04
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

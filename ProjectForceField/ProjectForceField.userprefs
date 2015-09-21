@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Camera\CameraFollow.cs">
+    <Files>
+      <File FileName="..\8-TrackPlayer\Assets\Scripts\AudioHandler.cs" Line="28" Column="1" />
+      <File FileName="Assets\Scripts\Camera\CameraFollow.cs" Line="29" Column="37" />
+      <File FileName="Assets\Scripts\GameMechanics\JumpMechanics.cs" Line="48" Column="59" />
+      <File FileName="Assets\Scripts\Animations\UnityChanAnim.cs" Line="18" Column="48" />
+      <File FileName="Assets\Scripts\SinglePurposeScripts\SetInAir.cs" Line="12" Column="36" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
