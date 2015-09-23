@@ -70,11 +70,11 @@ public class WalkMechanics : MonoBehaviour {
 		this.inputDirection = inputDirection;
 	}
 
-	protected float getHorizontalInput() {
+	public float getHorizontalInput() {
 		return horizontalInput;
 	}
 
-	protected float getVerticalInput() {
+	public float getVerticalInput() {
 		return verticalInput;
 	}
 }
