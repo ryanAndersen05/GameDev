@@ -14,7 +14,6 @@ public class JumpMechanics : MonoBehaviour {
 
 	void Update() {
 		jumpLogic ();
-		print (canJump);
 	}
 
 	void jumpLogic() {

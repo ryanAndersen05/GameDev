@@ -29,7 +29,7 @@ public class CameraFollow : MonoBehaviour {
         //print (distanceFromTarget);
 
         adjustRotation();
-        adjustMovementRotation();
+       // adjustMovementRotation();
 
         Vector3 goalPosition = -transform.forward * distanceFromTarget + targetFollow.position;
 		//transform.position = Vector3.Lerp(transform.position, goalPosition, Time.deltaTime * cameraSmoothing);
@@ -46,7 +46,7 @@ public class CameraFollow : MonoBehaviour {
         float scale = Mathf.Max(horInput, verInput);
 
         float horRotation = vec.x * scale;
-        print(horRotation);
+        //print(horRotation);
         goalTransfom.Rotate(new Vector3(0, horRotation * walkSmoothing * Time.deltaTime, 0));
 
     }

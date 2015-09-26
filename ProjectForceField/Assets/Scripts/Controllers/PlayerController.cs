@@ -2,10 +2,13 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-	float horizontalInput;
+    public GrabMechanics grabMechanics;
+
+    float horizontalInput;
 	float verticalInput;
 	WalkMechanics walkMechanics;
 	JumpMechanics jumpMechanics;
+
 
 	void Update() {
 		horizontalInput = Input.GetAxisRaw ("Horizontal");
@@ -14,6 +17,14 @@ public class PlayerController : MonoBehaviour {
 		walkMechanics.setVerticalInput (verticalInput);
 		walkMechanics.setHorizontalInput (horizontalInput);
 		jumpMechanics.jump (Input.GetButtonDown ("Jump"));
+        if (Input.GetButtonDown("Grab"))
+        {
+            grabMechanics.grab(true);
+        }
+        if (Input.GetButtonUp("Grab"))
+        {
+            grabMechanics.grab(false);
+        }
 	}
 
 	void Start() {

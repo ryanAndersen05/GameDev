@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerWalkMechanics : WalkMechanics {
 	public Transform cameraOffset;
+    public GrabMechanics grabMechanics;
 
 	protected override void adjustInputDirection ()
 	{
@@ -11,7 +12,17 @@ public class PlayerWalkMechanics : WalkMechanics {
 		Vector3 offsetDirection = new Vector3 (x, 0, z).normalized;
 
 		Vector3 newInputDirection = offsetDirection * getVerticalInput () + new Vector3(z, 0, -x) * getHorizontalInput();
-		setInputDirection (newInputDirection);
+		setInputDirection (newInputDirection.normalized);
 
 	}
+
+    protected override void updateRotation()
+    {
+        if (grabMechanics.getIsGrabbing())
+        {
+            return;
+        }
+        base.updateRotation();
+    }
+
 }

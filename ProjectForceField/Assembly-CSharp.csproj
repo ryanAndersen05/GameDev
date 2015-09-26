@@ -46,14 +46,16 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Animations\DoorOpen.cs" />
-     <Compile Include="Assets\Scripts\Animations\UnityChanAnim.cs" />
+     <Compile Include="Assets\Scripts\Animations\PlayerAnimation.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\GrabMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\JumpMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\PlayerWalkMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\WalkMechanics.cs" />
      <Compile Include="Assets\Scripts\SinglePurposeScripts\SetInAir.cs" />
+     <Compile Include="Assets\Xsens\MVN Sample Pack\Script\PlayerControl.cs" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
      <None Include="Assets\UnityChan\license.txt" />

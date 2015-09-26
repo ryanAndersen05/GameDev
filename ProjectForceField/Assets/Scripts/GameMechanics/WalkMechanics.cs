@@ -9,6 +9,7 @@ public class WalkMechanics : MonoBehaviour {
 	
 	float horizontalInput;
 	float verticalInput;
+    float rotationDirecction;
 	Vector3 inputDirection;
 	Rigidbody rigid;
 
@@ -45,7 +46,7 @@ public class WalkMechanics : MonoBehaviour {
 
 	}
 
-	void updateRotation() {
+	protected virtual void updateRotation() {
 		if (Mathf.Abs(inputDirection.x) > .0001 || Mathf.Abs(inputDirection.z) > .001) {
 			float degrees = Mathf.Atan2 (inputDirection.x, inputDirection.z) * Mathf.Rad2Deg;
 			float x = transform.eulerAngles.x;
@@ -77,4 +78,10 @@ public class WalkMechanics : MonoBehaviour {
 	public float getVerticalInput() {
 		return verticalInput;
 	}
+
+    public float getCurrentSpeedRatio()
+    {
+        Vector2 vec = new Vector2(rigid.velocity.x, rigid.velocity.z);
+        return vec.magnitude / speed;
+    }
 }
