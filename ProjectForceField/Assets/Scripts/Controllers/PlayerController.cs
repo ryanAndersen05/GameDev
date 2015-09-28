@@ -8,28 +8,37 @@ public class PlayerController : MonoBehaviour {
 	float verticalInput;
 	WalkMechanics walkMechanics;
 	JumpMechanics jumpMechanics;
+    ClimbMechanics climbMechanics;
 
 
 	void Update() {
+        
 		horizontalInput = Input.GetAxisRaw ("Horizontal");
 		verticalInput = Input.GetAxisRaw ("Vertical");
-
-		walkMechanics.setVerticalInput (verticalInput);
-		walkMechanics.setHorizontalInput (horizontalInput);
-		jumpMechanics.jump (Input.GetButtonDown ("Jump"));
-        if (Input.GetButtonDown("Grab"))
+        if (climbMechanics.getIsClimbing())
         {
-            grabMechanics.grab(true);
+            horizontalInput = 0;
+            verticalInput = 0;
         }
-        if (Input.GetButtonUp("Grab"))
+        walkMechanics.setVerticalInput (verticalInput);
+		walkMechanics.setHorizontalInput (horizontalInput);
+
+        bool jumpButton = Input.GetButtonDown("Jump");
+        if (jumpButton && !jumpMechanics.getIsJumping())
         {
-            grabMechanics.grab(false);
+            climbMechanics.checkClimb();
+        }
+
+        if (!climbMechanics.getIsClimbing())
+        {
+            jumpMechanics.jump(jumpButton);
         }
 	}
 
 	void Start() {
 		walkMechanics = GetComponent<WalkMechanics> ();
 		jumpMechanics = GetComponent<JumpMechanics> ();
+        climbMechanics = GetComponent<ClimbMechanics>();
 	}
 
 }

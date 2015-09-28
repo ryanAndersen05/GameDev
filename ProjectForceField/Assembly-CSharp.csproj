@@ -49,13 +49,14 @@
      <Compile Include="Assets\Scripts\Animations\PlayerAnimation.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\ClimbableBehavior.cs" />
      <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\ClimbMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\GrabMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\JumpMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\PlayerWalkMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\WalkMechanics.cs" />
      <Compile Include="Assets\Scripts\SinglePurposeScripts\SetInAir.cs" />
-     <Compile Include="Assets\Xsens\MVN Sample Pack\Script\PlayerControl.cs" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
      <None Include="Assets\UnityChan\license.txt" />
@@ -66,6 +67,7 @@
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+     <None Include="Assets\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

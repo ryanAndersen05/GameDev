@@ -5,39 +5,54 @@ public class DoorOpen : MonoBehaviour {
     public float goalOpenRotation;//The rotation of the door after it has been triggered to open
     public float openSmoothing = 3f;
     public Transform targetDoor;
-    public GameObject[] deactivateDoorLogic;
+    public DoorOpen otherSide;
     
     private float currentRotation;
     private Vector3 originalRotation;
+    private bool isOpen;
 
     void Update()
     {
+        if (otherSide.isOpen)
+        {
+            return;
+        }
         Quaternion goalRotation = Quaternion.Euler(originalRotation.x, currentRotation, originalRotation.z);
-        targetDoor.rotation = Quaternion.Lerp(targetDoor.rotation, goalRotation, openSmoothing * Time.deltaTime);
+        float offsetRotation = openSmoothing * Time.deltaTime;
+        if (Mathf.Abs(originalRotation.y - currentRotation) < .01)
+        {
+            offsetRotation /= 3;
+        }
+        targetDoor.rotation = Quaternion.Lerp(targetDoor.rotation, goalRotation, offsetRotation);
     }
 
     void OnTriggerEnter(Collider collider)
     {
-        currentRotation = goalOpenRotation;
-        enableDoors(false);
+        if (!otherSide.isOpen)
+        {
+            currentRotation = goalOpenRotation;
+        }
+        else
+        {
+            currentRotation = otherSide.goalOpenRotation;
+        }
+       
+        isOpen = true;
     }
 
     void OnTriggerExit(Collider collider)
     {
         currentRotation = originalRotation.y;
-        enableDoors(true);
+       
+        isOpen = false;
     }
 
-    void enableDoors(bool isEnabled)
-    {
-        foreach(GameObject d in deactivateDoorLogic)
-        {
-            d.SetActive(isEnabled);
-        }
-    }
+   
 
     void Awake()
     {
         originalRotation = targetDoor.eulerAngles;
     }
+
+ 
 }

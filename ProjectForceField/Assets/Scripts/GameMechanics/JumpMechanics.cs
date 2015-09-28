@@ -2,52 +2,70 @@
 using System.Collections;
 
 public class JumpMechanics : MonoBehaviour {
-	public float jumpForce = 5;
-	public float jumpDelay = .15f;
-	float jumpTimer;
-	Rigidbody rigid;
-	int canJump;
+    public float jumpTime;
 
-	void Start() {
-		rigid = GetComponent<Rigidbody> ();
-	}
 
-	void Update() {
-		jumpLogic ();
-	}
+    private float jumpTimer;
+    private int canJump;
+    private Rigidbody rigid;
+    private Animator anim;
 
-	void jumpLogic() {
-		float checkTime = jumpTimer;
-		jumpTimer -= Time.deltaTime;
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+        rigid = GetComponent<Rigidbody>();
+    }
 
-		if (jumpTimer < 0 && checkTime > 0) {
-			rigid.AddForce (0, jumpForce, 0);
-		}
-		if (jumpTimer < 0) {
-			jumpTimer = 0;
-		}
-	}
+    void Update()
+    {
+        updateJumpTimer();
+    }
 
-	public void jump(bool jumpButtonDown) {
-		if (jumpButtonDown) {
+    void updateJumpTimer()
+    {
+        float prevTimer = jumpTimer;
+        jumpTimer -= Time.deltaTime;
+        if (jumpTimer < 0)
+        {
+            jumpTimer = 0;
+            if (prevTimer > jumpTimer)
+            {
+                completeJump();
+            }
+        }
+    }
 
-			jumpTimer = jumpDelay;
-		}
-	}
+    public bool getIsJumping()
+    {
+        return jumpTimer > 0;
+    }
 
-	public void setCanJump(bool canJump) {
-		if (canJump) {
-			this.canJump++;
-		} else {
-			this.canJump--;
-		}
-	}
+    public  void setCanJump(bool canJump)
+    {
+        if (canJump)
+        {
+            this.canJump++;
+        }
+        else
+        {
+            this.canJump--;
+        }
+    }
 
-	public bool getInAir() {
-		return Mathf.Abs(rigid.velocity.y) > 0.001 && canJump == 0;
-	}
+    public void jump(bool jumpButton)
+    {
+        if (jumpButton && canJump > 0)
+        {
+            anim.applyRootMotion = true;
+            anim.SetTrigger("Jump");
+            jumpTimer = jumpTime;
+            //rigid.isKinematic = true;
+        }
+    }
 
-	public bool getIsJumping() {
-		return jumpTimer > 0;
-	}
+    public void completeJump()
+    {
+        anim.applyRootMotion = false;
+        rigid.isKinematic = false;
+    }
 }
